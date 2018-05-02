@@ -1,24 +1,25 @@
 # README
+Stylus provides a dashboard for creating, updating, and deleting music records. It also provides a chart for the user to see how many albums an artist released in a year. Have fund documenting your record collection! 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Prerequisites
+yarn: `brew install yarn`
 
-Things you may want to cover:
+### Setup
+Install gems: `bundle install`
 
-* Ruby version
+Initialize NodeJS modules: `yarn install`
 
-* System dependencies
+Initialize database: `bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rake db:seed`
 
-* Configuration
+Start rails server: `rails s`
 
-* Database creation
+Start webpack dev server: `./bin/webpack-dev-server`
 
-* Database initialization
 
-* How to run the test suite
+### TODOs
+Add more specs
 
-* Services (job queues, cache servers, search engines, etc.)
+Add sorting (other than the default alpha sort)
 
-* Deployment instructions
+Add CSV download
 
-* ...
