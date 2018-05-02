@@ -1,0 +1,15 @@
+<%= javascript_tag do %>
+  var audioRecordDashConfig = function() {
+    return (
+      <%= {
+              artists: @artists,
+              audioRecords: @audio_records,
+              artistChart: @default_artist_chart,
+          }.to_json.html_safe %>
+    )
+  }
+<% end %>
+
+<%= javascript_pack_tag 'application' %>
+
+<div id="audio-records-dashboard"></div>
