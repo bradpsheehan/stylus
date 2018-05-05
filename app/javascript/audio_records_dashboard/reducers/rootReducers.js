@@ -64,7 +64,6 @@ const rootReducer = (state = initialState, action) => {
         // names must be equal
         return 0
       }))
-      console.log('here')
       break
     case ACTION_UPDATE_CRUD_ACTION:
       newState = state.set('crudAction', action.crudAction)
@@ -74,11 +73,9 @@ const rootReducer = (state = initialState, action) => {
       break
     case ACTION_REMOVE_DELETED_AUDIO_RECORD:
       audioRecords = state.get('audioRecords')
-      console.log(audioRecords.length)
       audioRecords = audioRecords.filter((record) => {
         return record.id !== action.deletedAudioRecord.id
       })
-      console.log(audioRecords.length)
       newState = state.set('audioRecords', audioRecords)
       break
     case ACTION_UPDATE_CHART_SERIES_DATA:

@@ -147,9 +147,7 @@ export class AudioRecordsDashboard extends React.Component {
   }
 
   handleChartChange = (id) => {
-    console.log('id',id)
     fetchArtistChartData(id).then((res) => {
-      console.log('res data', res.data.chart_data)
       this.setState(() => {
         this.props.updateChartData(res.data.chart_data)
       })
