@@ -1,5 +1,5 @@
 # README
-Stylus provides a dashboard for creating, updating, and deleting music records. It also provides a chart for the user to see how many albums an artist released in a year. Have fund documenting your record collection! 
+Stylus provides a dashboard for creating, updating, and deleting music records. It also provides a chart for the user to see how many albums an artist released in a year. Have fun documenting your record collection! 
 
 ### Prerequisites
 yarn: `brew install yarn`
